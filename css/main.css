@@ -72,7 +72,7 @@ sup{
 }
 
 .wrapper a:hover {
-	color: #fd8300;
+	
 	transition: all .5s ease;
 }
 
@@ -109,6 +109,9 @@ sup{
 
 .menu {
 	float: left;
+}
+.menu a:hover{
+	color: #fd8300;
 }
 
 .social {
@@ -303,10 +306,9 @@ ul social li {
 
 .button a {
 	display: inline-block;
-	padding: 16px 30px;
+	padding: 17px 30px;
 	text-decoration: none;
 	font-size: 16px;
-	line-height: 22px;
 	color: #25252c;
 	font-weight: bold;
 	font-family: "Arial";
@@ -450,6 +452,12 @@ ul social li {
     display: block;
 
 }
+.menu-panel li{
+	border-top: 1px solid #cdcddd;
+}
+.menu-panel li:first-child{
+	border: none;
+}
 .maintext h1 {
 	margin: 0;
 	margin-top: 42px;
@@ -470,6 +478,7 @@ ul social li {
 }
 
 .maintext a:hover {
+	color: #000;
 	text-decoration: underline;
 }
 .text p {
