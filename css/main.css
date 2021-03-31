@@ -416,6 +416,7 @@ ul social li {
 
 .menu-panel a {
 	display: block;
+	position: relative;
 }
 
 .menu-panel li:hover {
@@ -429,6 +430,25 @@ ul social li {
 	line-height: 24px;
 	color: #25252c;
 	font-family: "Arial";
+}
+
+.menu-panel ul li a:before {
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	right: 20px;
+	top: 20px;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	transform: rotate(-45deg);
+	transition: all 1s ease;
+}
+
+.menu-panel li:hover a:before {
+	border-right-color: #fff;
+	border-bottom-color: #fff;
+	transform: rotate(45deg);
 }
 
 .menu-panel ul:last-child {
@@ -722,6 +742,7 @@ ul social li {
 	font-weight: bold;
 	font-family: "Arial";
 }
+
 .rule:hover {
 	color: #000;
 	text-decoration: underline;
